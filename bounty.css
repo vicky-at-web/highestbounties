@@ -1,0 +1,158 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Phudu', cursive;
+	font-family: 'PT Serif', serif;
+	box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://static.wikia.nocookie.net/onepiece/images/b/b5/Site-background-light/revision/latest/scale-to-width-down/1500?cb=20211209210547);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.bounties {
+  background-color: #AE773F;;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pirates {
+  border-bottom: 1px solid #AE773f;;
+}
+.pirates:last-child {
+  border-bottom: none;
+}
+
+.king{
+  margin-bottom: 25px;
+  max-width: 100%;
+  border-left: 10px solid #AE773F;
+}
+.pirateking{
+  margin-bottom: 25px;
+  width: 100%;
+  height: 27.3%;
+}
+h2{
+  color: #DC3545;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.specs{
+  margin: 50px 0 25px;
+  color: rgb(29, 20, 20)
+}
+
+.powers{
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid #AE773F;
+}
+.powers:hover{
+  text-decoration: palevioletred underline;
+}
+.powers:first-child:hover{
+  text-decoration:  red underline;
+}
+
+.powers:last-child{
+  border-bottom: 1px solid #AE773F;
+}
+
+.formore{
+  color:#DC3545;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.search{
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #AA0062 ;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+  transition: background-color 200ms ease-in-out;
+}
+
+.search:hover, .search:focus {
+  background-color: #e1f1ff;
+}
+
+
+@media (min-width: 900px){
+  .bounties {
+    flex-direction: row;
+  }
+  .bounties {
+    border-bottom: none;
+    border-right: 1px solid #AE773F;
+    padding: 25px 50px;
+  }
+  .bounties:last-child {
+    border-right: none;
+  }
+}
